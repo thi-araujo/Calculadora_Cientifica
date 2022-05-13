@@ -1,7 +1,7 @@
 # CALCULADORA CIENTÍFICA
 
 
-print("CALCULADORA CINTÍFICA!!!")
+print("=======================================CALCULADORA CIENTÍFICA==================================================")
 
 usuario = input(" DIGITE SEU NOME POR FAVOR: \n")
 
@@ -23,6 +23,8 @@ while True:
     if start == 'n':
         print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
         exit()
+
+# CALCULO CONTAS BÁSICAS
 
     if start == '1':
 
@@ -53,7 +55,7 @@ while True:
 
         continue
 
-    # FIM DESSA PARTE DO PROGRAMA
+# FIM DESSA PARTE DO PROGRAMA
 
     if start == '2':
         print("\t CIRCULOS: \n")
@@ -362,6 +364,9 @@ while True:
 
                     break
 
+# CALCULO CONVERSÃO DE TEMPERATURA
+
+
             if un == '3':
                 print("\t CONVERSOR DE TEMPERATURA: \n")
 
@@ -462,6 +467,8 @@ while True:
 
                         break
 
+# CALCULO CONVERSÃO DE VOLUMES
+
             if un == '4':
                 print("\t CONVERSOR DE VOLUME: \n")
 
@@ -517,6 +524,8 @@ while True:
                         print("O VOLUME EM L É:", resp)
 
                         break
+
+# CALCULO CONVERSÃO DE MASSAS
 
             if un == '5':
                 print("\t MASSA: \n")
@@ -621,6 +630,8 @@ while True:
                         resp = float(c) * 1000
                         print("A MASSA EM MG É:", resp)
                         break
+
+# CALCULO DE CONVERSÃO DE DADOS
 
             if un == '6':
                 print("\t DADOS: \n")
@@ -763,3 +774,242 @@ while True:
             break
 
         break
+
+# CALCULO DA GEOMETRIA
+
+    if start == '7':
+        print("\t GEOMETRIA: \n")
+
+        print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+        g = input("TEOREMA DE PITÁGORAS.........: [1]\n"
+                  "SENO, COSSENO E TANGENTE.....: [2]\n"
+                  "ÁREAS........................: [3]\n"
+                  "PERÍMETRO....................: [4]\n"
+                  "SEMELHANÇA ENTRE TRIÂNGULOS..: [5]\n"
+                  "SAIR.........................: [n]\n")
+
+        if g == 'n':
+            print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+            exit()
+
+            break
+
+        if g == '1':
+            import math
+
+            print("\t TEOREMA DE PITÁGORAS: \n")
+
+            a = float(input("DIGITEO VALOR DO CATETO 1: "))
+            b = float(input("DIGITE O VALOR DO CATETO 2: "))
+
+            resp = math.sqrt((a * a) + (b * b))
+
+            print("O VALOR DA HIPOTENUSA É:", resp)
+            break
+
+        if g == '2':
+            import math
+
+            print("\t SENO, COSSENO E TANGENTE: \n")
+
+            break
+
+# CALCULO DAS ÁREAS
+
+        if g == '3':
+            print("\t ÁREAS: \n")
+
+            print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+            o = input("ÁREA DO QUADRADO .......: [1]\n"
+                      "ÁREA DO RETÂNGULO ......: [2]\n"
+                      "ÁREA DO TRIÂNGULO ......: [3]\n"
+                      "ÁREA DO TRAPÉZIO .......: [4]\n"
+                      "ÁREA DO CUBO ...........: [5]\n"
+                      "SAIR ...................: [n]\n")
+
+            if o == 'n':
+                print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+                exit()
+
+                break
+
+# CALCULO DA AREA DO QUADRADO
+
+            if o == '1':
+                print("\t ÁREA DO QUADRADO: \n")
+
+                a = input("DIGITE O VALOR DE UM DOS LADOS DO QUADRADO: ")
+
+                resp = float(a) * float(a)
+
+                print("A ÁREA DO QUADRADO É:", resp)
+
+                while True:
+                    a = input(usuario, "\t GOSTARIA DE SAIR DO PROGRAMA? PRESSIONE [N]\n PARA SAIR\n")
+
+                    if a == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+                        exit()
+                        break
+
+
+                    elif a:
+                        print("\t CARACTERE INVÁLIDO!!\n")
+                        continue
+
+                    break
+
+# CALCULO DA AREA DO RETANGULO
+
+            if o == '2':
+                print("\t ÁREA DO RETÂNGULO: \n")
+
+                a = input("DIGITE O VALOR DA BASE DO RETÂNGULO: ")
+                b = input("DIGITE O VALOR DO LADO DO TRIÂNGULO: ")
+
+                resp = float(a) * float(b)
+
+                print("A ÁREA DO RETÂNGULO É:", resp)
+
+                while True:
+                    a = input(usuario, "\t GOSTARIA DE SAIR DO PROGRAMA? PRESSIONE [N]\n PARA SAIR\n")
+
+                    if a == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+                        exit()
+
+                    elif a:
+                        print('\t CARACTERE INVÁLIDO!!!\n')
+                        continue
+
+                    break
+
+# CALCULO DA AREA DO TRIANGULO
+
+            if o == '3':
+                print("\t ÁREA DO TRIÂNGULO: \n")
+
+                a = input("DIGITE O VALOR DA BASE DO TRIÂNGULO: ")
+                b = input("DIGITE O VALOR DA ALTURA DO TRIÂNGULO: ")
+
+                resp = (float(a) * float(b)) / 2
+
+                print("A ÁREA DO TRIÂNGULO É:", resp)
+
+                while True:
+                    a = input(usuario, "\t GOSTARIA DE SAIR DO PROGRAMA? PRESSIONE [N]\n PARA SAIR\n")
+
+                    if a == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+                        exit()
+
+                    elif a:
+                        print("\t CARACTERE INVÁLIDO!!!\n")
+                        continue
+
+                    break
+
+# CALCULO DA AREA DO TRAPEZIO
+
+            if o == '4':
+                print("\t ÁREA DO TRAPÉZIO: \n")
+
+                a = input("DIGITE O VALOR DA BASE MAIOR DO TRAPÉZIO: ")
+                b = input("DIGITE O VALOR DA BASE MENOR DO TRAPÉZIO: ")
+                c = input("DIGITE O VALOR DA ALTURA DO TRAPÉZIO: ")
+
+                resp = ((float(a) + float(b)) * float(c)) / 2
+
+                print("A ÁREA DO TRAPÉZIO É:", resp)
+
+                while True:
+                    a = input(usuario, "\t GOSTARIA DE SAIR DO PROGRAMA? PRESSIONE [N]\n PARA SAIR\n")
+
+                    if a == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+                        exit()
+
+
+                    elif a:
+                        print("\t CARACTERE INVÁLIDO!!!\n")
+
+                        continue
+
+                    break
+
+# CALCULO DA AREA DO CUBO
+
+            if o == '5':
+                print("\t ÁREA DO CUBO: \n")
+
+                a = input("DIGITE O VALOR DO LADO DO QUADRADO: ")
+
+                resp = float(a) * 6
+
+                print("A ÁREA DO CUBO É:", resp)
+                break
+
+# CALCULO DE FUNÇÕES
+
+    if start == '8':
+        print("\t FUNÇÕES: \n")
+
+        print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+        a = input("DESCOBRIR O VALOR DE Y ......: [1]\n"
+                  "DESCOBRIR O VALOR DE X ......: [2]\n"
+                  "SAIR ........................: [n]\n")
+
+        if a == 'n':
+            print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+
+            exit()
+
+            break
+
+        if a == '1':
+            print('\t VALOR DE Y: \n')
+
+            b = input("DIGITE O VALOR DE X: ")
+            c = input("DIGITE O VALOR DE B: ")
+
+            resp = float(c) + float(b)
+
+            print("\t O VALOR DE Y É:", resp, "\n")
+
+            break
+
+        if a == '2':
+            print("\t VALOR DE X: \n")
+
+            b = input("DIGITE O VALOR DE Y: ")
+            c = input('DIGITE O VALOR DE B: ')
+
+            resp = float(c) - float(b)
+
+            print('\t O VALOR DE X É:', resp, '\n')
+
+            break
+
+
+        else:
+            print("\t CARACTERE INVÁLIDO!!!\n")
+            continue
+
+        break
+
+# CALCULO VELOCIDADE MÉDIA
+
+    if start == '9':
+        print("\t VELOCIDADE MÉDIA: \n")
+
+        a = input('DIGITE A DISTÂNCIA PERCORRIDA: ')
+        b = input("DIGITE O TEMPO GASTO (EM HORAS): ")
+
+        resp = float(a) / float(b)
+
+        print("\t A VELOCIDADE MÉDIA É:", resp, "\n")
+
+# ============================================TÉRMINO DO PROGRAMA==============================================================
