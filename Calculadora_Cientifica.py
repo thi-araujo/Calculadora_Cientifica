@@ -184,13 +184,13 @@ while True:
         print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
 
         while True:
-            un = input("Comprimento: \n'1'\n"
-                       "Área: \n'2'\n"
-                       "Temperatura: \n'3'\n"
-                       "Volume: \n'4'\n"
-                       "Massa: \n'5'\n"
-                       "Dados: \n'6'\n"
-                       "SAIR: \n'n'\n")
+            un = input("COMPRIMENTO....: [1]\n"
+                       "ÁREA...........: [2]\n"
+                       "TEMPREATURA....: [3]\n"
+                       "VOLUME.........: [4]\n"
+                       "MASSA..........: [5]\n"
+                       "DADOS..........: [6]\n"
+                       "SAIR...........: [n]\n")
 
             if un == 'n':
                 print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
@@ -204,13 +204,13 @@ while True:
                 print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
 
                 while True:
-                    a = input("M ----> Cm: \n'1'\n"
-                              "M ----> Mm: \n'2'\n"
-                              "Cm ----> M: \n'3'\n"
-                              "Cm ----> mm: \n'4'\n"
-                              "Mm ----> M: \n'5'\n"
-                              "Mm ----> Cm: \n'6'\n"
-                              "SAIR: \n'n'\n")
+                    a = input("M ----> Cm: [1]\n"
+                              "M ----> Mm: [2]\n"
+                              "Cm ---> M : [3]\n"
+                              "Cm ---->mm: [4]\n"
+                              "Mm ----> M: [5]\n"
+                              "Mm ---->Cm: [6]\n"
+                              "SAIR......: [n]\n")
 
                     if a == 'n':
                         print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
@@ -296,10 +296,10 @@ while True:
                 print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
 
                 while True:
-                    b = input("ÁREA DO QUADRADO: \n'q'\n"
-                              "ÁREA DO RETÂNGULO: \n'r'\n"
-                              "ÁREA DO TRIÂNGULO: \n't'\n"
-                              "ÁREA DO TRAPÉZIO: \n'tp'\n"
+                    b = input("ÁREA DO QUADRADO....: [q]\n"
+                              "ÁREA DO RETÂNGULO...: [r]\n"
+                              "ÁREA DO TRIÂNGULO...: [t]\n"
+                              "ÁREA DO TRAPÉZIO....: [tp]\n"
                               "SAIR: \n'n'\n")
 
                     if b == 'n':
@@ -328,7 +328,7 @@ while True:
                         a = input("DIGITE O LADO A DO RETÂNGULO: ")
                         b = input("DIGITE O LADO B DO RETÂNGULO: ")
 
-                        resp = float(A) * float(b)
+                        resp = float(a) * float(b)
                         print("A ÁREA DO RETÂNGULO É:", resp)
 
                         break
@@ -368,13 +368,13 @@ while True:
                 print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
 
                 while True:
-                    t = input("º CELSIUS ----> ºFAHRENHEIT: \n'1'\n"
-                              "º CELSIUS ----> KELVIN: \n'2'\n"
-                              "º FAHRENHEIT ----> º CELSIUS: \n'3'\n"
-                              "º FAHRENHEIT ----> KELVIN: \n'4'\n"
-                              "KELVIN----> º CELSIUS: \n'5'\n"
-                              "KELVIN ----> º FAHRENHEIT: \n'6'\n"
-                              "SAIR: \n'n'\n")
+                    t = input("º CELSIUS ----> ºFAHRENHEIT....: [1]\n"
+                              "º CELSIUS ----> KELVIN.........: [2]\n"
+                              "º FAHRENHEIT ----> º CELSIUS...: [3]\n"
+                              "º FAHRENHEIT ----> KELVIN......: [4]\n"
+                              "KELVIN----> º CELSIUS..........: [5]\n"
+                              "KELVIN ----> º FAHRENHEIT......: [6]\n"
+                              "SAIR...........................: [n]\n")
 
                     if t == 'n':
                         print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
@@ -461,3 +461,305 @@ while True:
                         print("A TEMPERATURA EM ºF É:", resp)
 
                         break
+
+            if un == '4':
+                print("\t CONVERSOR DE VOLUME: \n")
+
+                print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+                while True:
+                    v = input("LITRO ----> MILILITRO..........: [1]\n"
+                              "LITRO ----> METRO CÚBICO.......: [2]\n"
+                              "LITRO ----> CENTÍMETRO CÚBICO..: [3]\n"
+                              "MILILITRO----> LITRO...........: [4]\n"
+                              "SAIR...........................: [n]\n")
+
+                    if v == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+                        exit()
+
+                    if v == '1':
+                        print("\t LITRO ----> MILILITRO: \n")
+
+                        a = input("DIGITE O VOLUME EM LITROS:")
+
+                        resp = float(a) * 1000
+                        print("O VOLUME EM ML É:", resp)
+
+                        break
+
+                    if v == '2':
+                        print("\t LITRO ----> METRO CÚBICO:\n")
+
+                        a = input("DIGTE O VOLUME EM LITROS: ")
+
+                        resp = float(a) / 1000
+                        print("O VOLUME EM M³ É:", resp)
+
+                        break
+
+                    if v == '3':
+                        print("\t LITRO ----> CENTÍMETRO CÚBICO: \n")
+
+                        a = input("DIGITE O VOLUME EM LITROS: ")
+
+                        resp = float(a) * 1000
+                        print("O VOLUME EM CM³ É:", resp)
+
+                        break
+
+                    if v == '4':
+                        print("\t MILILITRO ----> LITRO: \n")
+
+                        a = input("DIGITE O VOLUME EM MILILITROS: ")
+
+                        resp = float(a) / 1000
+                        print("O VOLUME EM L É:", resp)
+
+                        break
+
+            if un == '5':
+                print("\t MASSA: \n")
+
+                print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+                while True:
+                    a = input("TONELADAS ------> KG...: [1]\n"
+                              "TONELADAS ------> G....: [2]\n"
+                              "TONELADAS ------> MG...: [3]\n"
+                              "QUILOGRAMAS ----> T....: [4]\n"
+                              "QUILOGRAMAS ----> G....: [5]\n"
+                              "QUILOGRAMAS ----> MG...: [6]\n"
+                              "GRAMAS ---------> T....: [7]\n"
+                              "GRAMAS ---------> KG...: [8]\n"
+                              "GRAMAS ---------> MG...: [9]\n"
+                              "SAIR ..................: [n]\n")
+
+                    if a == 'n':
+                        a
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+                        exit()
+                        break
+
+                    if a == '1':
+                        print("\t TONELADA ----> KG:\n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000
+                        print("A MASSA EM KG É:", resp)
+                        break
+
+                    if a == '2':
+                        print("\t TONELADA ----> G: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000000
+                        print("A MASSA EM G É:", resp)
+                        break
+
+                    if a == '3':
+                        print("\t TONELADA ----> MG: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000000000
+                        print("A MASSA EM MG É:", resp)
+                        break
+
+                    if a == '4':
+                        print("\t QUILOGRAMAS ----> T: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) / 1000
+                        print("A MASSA EM T É:", resp)
+                        break
+
+                    if a == '5':
+                        print("\t QUILOGRAMAS ----> G: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000
+                        print(" A MASSA EM G É:", resp)
+                        break
+
+                    if a == '6':
+                        print("\t QUILOGRAMAS ----> MG: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000000
+                        print("A MASSA EM MG É:", resp)
+                        break
+
+                    if a == '7':
+                        print("\t GRAMAS ----> T: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) / 1000000
+                        print("A MASSA EM T É:", resp)
+                        break
+
+                    if a == '8':
+                        print("\t GRAMAS ----> KG: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) / 1000
+                        print("A MASSA EM KG É:", resp)
+                        break
+
+                    if a == '9':
+                        print("\t GRAMAS ----> MG: \n")
+
+                        c = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(c) * 1000
+                        print("A MASSA EM MG É:", resp)
+                        break
+
+            if un == '6':
+                print("\t DADOS: \n")
+
+                print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+                while True:
+                    d = input("BIT ---------> BYTE......: [1]\n"
+                              "BYTE --------> MEGABYTE..: [2]\n"
+                              "BYTE --------> GIGABYTE..: [3]\n"
+                              "MEGABYTE ----> BITE......: [4]\n"
+                              "MEGABYTE ----> GIGABYTE..: [5]\n"
+                              "MEGABYTE ----> TERABYTE..: [6]\n"
+                              "GIGABYTE ----> BYTE......: [7]\n"
+                              "GIGABYTE ----> MEGABYTE..: [8]\n"
+                              "GIGABYTE ----> TERABYTE..: [9]\n"
+                              "TERABYTE ----> MEGABYTE..: [10]\n"
+                              "TERABYTE ----> GIGABYTE..: [11]\n"
+                              "SAIR: \n'n'\n")
+
+                    if d == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!! \n")
+                        exit()
+                        break
+
+                    if d == '1':
+                        print("\t BIT ----> BYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: \n")
+
+                        resp = float(a) * 0.125
+
+                        print("OS DADOS EM BYTES SÃO:", resp)
+                        break
+
+                    if d == '2':
+                        print("\t BYTE ----> MEGABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: \n")
+
+                        resp = float(a) * 1000000
+
+                        print("OS DADOS EM MEGABYTE SÃO:", resp)
+                        break
+
+                    if d == '3':
+                        print("\t BYTE ----> GIGABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: \n")
+
+                        resp = float(a) * 125000000
+
+                        print("OS DADOS EM GIGABYTES SÃO:", resp)
+                        break
+
+                    if d == '4':
+                        print('\t MEGABYTE ----> BYTE: \n')
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) / 100000
+                        print("OS DADOS EM BYTES SÃO: ", resp)
+                        break
+
+                    if d == '5':
+                        print("\t MEGABYTE ----> GIGABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) / 0.008
+                        print("OS DADOS EM GIGABYTES SÃO:", resp)
+                        break
+
+                    if d == '6':
+                        print("\t MEGABYTE ----> TERABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) / 0.000000125
+
+                        print("OS DADOS EM TERABYTE SÃO:", resp)
+                        break
+
+                    if d == '7':
+                        print("\t GIGABYTE ----> BYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) * 125000000
+
+                        print("OS DADOS EM BYTES SÃO:", resp)
+                        break
+
+                    if d == '8':
+                        print("\t GIGABYTE ----> MEGABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) * 1000
+
+                        print("OS DADOS EM MEGABYTES SÃO:", resp)
+                        break
+
+                    if d == '9':
+                        print("\t GIGABYTE ----> TERABYTE: \n")
+
+                        a = input('DIGITE O VALOR A SER CONVERTIDO: \n')
+
+                        resp = float(a) / 0.000125
+
+                        print("OS DADOS EM TERABYTES SÃO:", resp)
+                        break
+
+                    if d == '11':
+                        print("\t TERABYTE ----> MEGABYTE: \n")
+
+                        a = input("DIGITE O VALOR A SER CONVERTIDO: ")
+
+                        resp = float(a) * 1000000
+
+                        print("OS DADOS EM MEGABYTES SÃO:", resp)
+                        break
+
+                    if d == '12':
+                        print('\t TERABYTE ----> GIGABYTE: \n')
+
+                        a = input('DIGITE O VALOR A SER CONVERTIDO: ')
+
+                        resp = float(a) * 1000
+
+                        print("OS DADOS EM GIGABYTES SÃO:", resp)
+                        break
+
+
+                    else:
+                        print("\t CARACTERE INVÁLIDO!!!\n")
+
+                        break
+
+            break
+
+        break
