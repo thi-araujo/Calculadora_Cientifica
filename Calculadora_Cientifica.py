@@ -107,7 +107,7 @@ while True:
 
     if start == '3':
 
-        print("\t EQUAÇÃOD DE SEGUNDO GRAU: \n")
+        print("\t EQUAÇÃO DE SEGUNDO GRAU: \n")
         import math
 
         a = int(input("DIGITE UM VALOR PARA  a: "))
@@ -148,8 +148,8 @@ while True:
 
                 import math
 
-                a = input("Digite um valor para a: ")
-                b = input("Digite um valor para b: ")
+                a = input("DIGITE UM VALOR PARA a: ")
+                b = input("DIGITE UM VALOR PARA b: ")
 
                 resp = None
 
@@ -165,16 +165,16 @@ while True:
 
             import math
 
-            raiz = float(input("Digite um valor: "))
-            radical = float(input("Digite o radical: "))
+            raiz = float(input("DIGITE UM VALOR: "))
+            radical = float(input("DIGITE O RADICAL: "))
 
             if radical == '2':
                 raiz2 = raiz ** (1 / 2)
-                print("A raiz quadrada é:", raiz2)
+                print("A Raiz Quadrada é:", raiz2)
 
             if radical == '3':
                 raiz3 = raiz ** (1 / 3)
-                print(usuario, "A raiz cúbica é:", raiz3)
+                print(usuario, "A Raiz Cúbica é:", raiz3)
 
             else:
                 print(usuario, "\t CARACTERE INVÁLIDO!!!\n")
@@ -235,7 +235,7 @@ while True:
 
                         import math
 
-                        v1 = input("DIGITEO COMPRIMENTO INICIAL: ")
+                        v1 = input("DIGITE O COMPRIMENTO INICIAL: ")
 
                         resp = float(v1) * 10000
                         print("O COMPRIMENTO É:", resp)
@@ -271,7 +271,7 @@ while True:
 
                         import math
 
-                        v1 = input("DIGITE O COMPRIMENTOEM MILIMETROS: ")
+                        v1 = input("DIGITE O COMPRIMENTO EM MILIMETROS: ")
 
                         resp = float(v1) / 10000
                         print(" COMPRIMENTO É:", resp)
@@ -283,9 +283,181 @@ while True:
 
                         import math
 
-                        v1 = input("DIGITEO COMPRIMENTO EM MILIMETROS: ")
+                        v1 = input("DIGITE O COMPRIMENTO EM MILIMETROS: ")
 
                         resp = float(v1) / 100
                         print("O COMPRIMENTO É:", resp)
+
+                        break
+
+            if un == '2':
+                print("\t ÁREA: \n")
+
+                print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+                while True:
+                    b = input("ÁREA DO QUADRADO: \n'q'\n"
+                              "ÁREA DO RETÂNGULO: \n'r'\n"
+                              "ÁREA DO TRIÂNGULO: \n't'\n"
+                              "ÁREA DO TRAPÉZIO: \n'tp'\n"
+                              "SAIR: \n'n'\n")
+
+                    if b == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+                        exit()
+
+                        break
+
+                    if b == 'q':
+                        print("\t ÁREA DO QUADRADO: \n")
+
+                        import math
+
+                        a = input("DIGITE UM DOS LADOS DO QUADRADO: ")
+
+                        resp = float(a) * float(a)
+                        print("A ÁREA DO QUADRADO É:", resp)
+
+                        break
+
+                    if b == 'r':
+                        print("\t ÁREA DO RETÂNGULO: ")
+
+                        import math
+
+                        a = input("DIGITE O LADO A DO RETÂNGULO: ")
+                        b = input("DIGITE O LADO B DO RETÂNGULO: ")
+
+                        resp = float(A) * float(b)
+                        print("A ÁREA DO RETÂNGULO É:", resp)
+
+                        break
+
+                    if b == 't':
+                        print("\t ÁREA DO TRIÂNGULO: \n")
+
+                        import math
+
+                        a = input("DIGITE O VALOR DA BASE DO TRIÂNGULO: ")
+                        b = input("DIGITE O VALOR DA ALTURA DO TRIÂNGULO: ")
+
+                        resp = (float(a) * float(b)) / 2
+                        print("A ÁREA DO TRIÂNGULO É:", resp)
+
+                        break
+
+                    if b == 'tp':
+                        print("\t ÁREA DO TRAPÉZIO: \n")
+
+                        import math
+
+                        a = input("DIGITE O VALOR DA BASE DO TRAPÉZIO: ")
+                        b = input("Digite O VALOR DA PARTE SUPERIOR DO TRAPÉZIO: ")
+                        h = input("Digite O VALOR DA ALTURA DO TRAPÉZIO: ")
+
+                        resp = (float(a) + float(b) * float(h)) / 2
+                        print("A ÁREA DO TRAPÉZIO É:", resp)
+
+                        break
+
+                    break
+
+            if un == '3':
+                print("\t CONVERSOR DE TEMPERATURA: \n")
+
+                print(usuario, " \t PARA CONTINUAR, SELECIONE UMA DAS SEGUINTES OPÇÕES:\n")
+
+                while True:
+                    t = input("º CELSIUS ----> ºFAHRENHEIT: \n'1'\n"
+                              "º CELSIUS ----> KELVIN: \n'2'\n"
+                              "º FAHRENHEIT ----> º CELSIUS: \n'3'\n"
+                              "º FAHRENHEIT ----> KELVIN: \n'4'\n"
+                              "KELVIN----> º CELSIUS: \n'5'\n"
+                              "KELVIN ----> º FAHRENHEIT: \n'6'\n"
+                              "SAIR: \n'n'\n")
+
+                    if t == 'n':
+                        print(usuario, "\t OBRIGADO POR USAR ESTE PROGRAMA!!!\n")
+                        exit()
+
+                        break
+
+                    if t == '1':
+                        print("\t ºCELSIUS ----> ºFAHRENHEIT: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS CELSIUS: ")
+
+                        resp1 = float(a) * 9
+
+                        resp = (float(resp1) + 160) / 5
+                        print("A TEMPERATURA EM ºF É:", resp)
+
+                        break
+
+                    if t == '2':
+                        print("\t CELSIUS ----> KELVIN: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS CELSIUS: ")
+
+                        resp = float(a) + 273
+                        print("A TEMPERATURA EM K É:", resp)
+
+                        break
+
+                    if t == '3':
+                        print("\t FAHRENHEIT ----> CELSIUS: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS FAHRENHEIT: ")
+
+                        resp1 = float(a) * 5
+
+                        resp = (float(resp1) - 160) / 9
+                        print("A TEMPERATURA EM ºC É:", resp)
+
+                        break
+
+                    if t == '4':
+                        print("\t FAHRENHEIT ----> KELVIN: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS FAHRENHEIT: ")
+
+                        resp1 = float(a) + 459.67
+
+                        resp = float(resp1) / 1.8
+                        print("A TEMPERATURA EM K É:", resp)
+
+                        break
+
+                    if t == '5':
+                        print("\t KELVIN ----> CELSIUS: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS KELVIN: ")
+
+                        resp = float(a) - 273
+                        print(" A TEMPERETURA EM ºC É:", resp)
+
+                        break
+
+                    if t == '6':
+                        print("\t KELVIN ----> FAHRENHEIT: \n")
+
+                        import math
+
+                        a = input("DIGITE A TEMPERATURA EM GRAUS KELVIN: ")
+
+                        resp1 = float(a) * 1.8
+
+                        resp = float(resp1) - 459.67
+                        print("A TEMPERATURA EM ºF É:", resp)
 
                         break
