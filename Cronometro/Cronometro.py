@@ -11,4 +11,8 @@ def countdown(t):
         t -= 1
         print("Lift off")
 
+# Solicite ao usuário para digitar o período de contagem regressiva em segundos:
 t = input("Digite o tempo em segundos: ")
+
+# Chamada da função
+countdown(int(t))
