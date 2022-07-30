@@ -19,3 +19,4 @@ if not os.path.isfile("youtube_alarme_videos.txt"):
 print('Criamdo "youtube_alarme_videos.txt"...')
 
 with open("youtube_alarme_videos.txt", "w") as arquivo_alarme:
+    arquivo_alarme.write("https://www.youtube.com/watch?v=35ywqydkzXM&ab_channel=Accept")
