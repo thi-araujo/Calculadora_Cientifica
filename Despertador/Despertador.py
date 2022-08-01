@@ -21,4 +21,8 @@ print('Criamdo "youtube_alarme_videos.txt"...')
 with open("youtube_alarme_videos.txt", "w") as arquivo_alarme:
     arquivo_alarme.write("https://www.youtube.com/watch?v=35ywqydkzXM&ab_channel=Accept")
 
-def check_alarm_input(alarm_time):
+# Verificar se o usuário digitou um horário do alarme válido
+
+def check_alarm_input(horario_do_alarme):
+    if len(horario_do_alarme) == 1: #Formato hora
+
