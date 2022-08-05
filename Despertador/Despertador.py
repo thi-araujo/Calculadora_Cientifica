@@ -25,13 +25,16 @@ with open("youtube_alarme_videos.txt", "w") as arquivo_alarme:
 
 def check_alarm_input(horario_do_alarme):
 
-    if len(horario_do_alarme) == 1: #Formato hora
+    if len(horario_do_alarme) == 1: # Formato hora
         if horario_do_alarme[0] < 24 and horario_do_alarme[0] >= 0:
             return True
 
     if len(horario_do_alarme) == 2: # Formato minutos
         if horario_do_alarme[0] < 24 and horario_do_alarme[0] >= 0 and \
             horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0:
+            return True
+
+
 
 
 
