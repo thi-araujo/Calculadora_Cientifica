@@ -36,7 +36,11 @@ def check_alarm_input(horario_do_alarme):
 
     elif len(horario_do_alarme) == 3:  # Formato [Hora:Minuto:Segundos]
         if horario_do_alarme[0] < 24 and horario_do_alarme[0] >= 0 and \
-                    horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0 and \
+            horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0 and \
+            horario_do_alarme[2] < 60 and horario_do_alarme[2] >= 0:
+            return True
+            return False
+
 
 
 
