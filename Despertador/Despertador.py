@@ -31,15 +31,19 @@ def check_alarm_input(horario_do_alarme):
 
     if len(horario_do_alarme) == 2: # Formato minutos
         if horario_do_alarme[0] < 24 and horario_do_alarme[0] >= 0 and \
-            horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0:
+           horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0:
             return True
 
     elif len(horario_do_alarme) == 3:  # Formato [Hora:Minuto:Segundos]
         if horario_do_alarme[0] < 24 and horario_do_alarme[0] >= 0 and \
-            horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0 and \
-            horario_do_alarme[2] < 60 and horario_do_alarme[2] >= 0:
+           horario_do_alarme[1] < 60 and horario_do_alarme[1] >= 0 and \
+           horario_do_alarme[2] < 60 and horario_do_alarme[2] >= 0:
             return True
             return False
+
+# Obter entrada do usuário para a hora do alarme
+
+    print("Defina um horário para o alarme (Ex. 06:30 ou 18:30:00)")
 
 
 
