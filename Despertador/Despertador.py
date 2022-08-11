@@ -45,6 +45,11 @@ def check_alarm_input(horario_do_alarme):
 
     print("Defina um horário para o alarme (Ex. 06:30 ou 18:30:00)")
 
+while True:
+    alarme_input = input(">> ")
+    try:
+
+
 
 
 
