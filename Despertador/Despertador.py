@@ -50,6 +50,11 @@ while True:
     try:
         horario_do_alarme = [int(n) for n in alarm_input.split(":")]
         if  check_alarm_input(alarm_time):
+            break
+        else:
+            raise ValueError
+            except ValueError
+
 
 
 
