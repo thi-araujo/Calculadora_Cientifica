@@ -49,6 +49,8 @@ while True:
     alarme_input = input(">> ")
     try:
         horario_do_alarme = [int(n) for n in alarm_input.split(":")]
+        if  check_alarm_input(alarm_time):
+
 
 
 
