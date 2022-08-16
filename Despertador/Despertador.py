@@ -54,6 +54,7 @@ while True:
         else:
             raise ValueError
             except ValueError
+            print("ERRO: Digite a hora no formato HH:MM ou HH:MM:SS")
 
 
 
