@@ -59,6 +59,8 @@ while True:
 
 # Convertento a hora do alarme de [H:M] ou [H:M:S] para segundo
 
+    segundos_hms = [3600, 60, 1] # Numero de segundos em uma hora, minutos e segundos
+
 
 
 
