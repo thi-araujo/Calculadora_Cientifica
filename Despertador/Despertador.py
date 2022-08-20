@@ -49,7 +49,7 @@ while True:
     alarme_input = input(">> ")
     try:
         horario_do_alarme = [int(n) for n in alarm_input.split(":")]
-        if  check_alarm_input(alarm_time):
+        if  check_alarm_input(horario_do_alarme):
             break
         else:
             raise ValueError
@@ -60,6 +60,8 @@ while True:
 # Convertento a hora do alarme de [H:M] ou [H:M:S] para segundo
 
     segundos_hms = [3600, 60, 1] # Numero de segundos em uma hora, minutos e segundos
+
+    alarme_segundos = sum([a * b for a, b in zip(segundos_hms_hms[:len(horario_do_alarme)], horario_do_alarme)])
 
 
 
