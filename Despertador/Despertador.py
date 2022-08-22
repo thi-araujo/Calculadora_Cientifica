@@ -63,7 +63,10 @@ while True:
 
     alarme_segundos = sum([a * b for a, b in zip(segundos_hms_hms[:len(horario_do_alarme)], horario_do_alarme)])
 
-    # Obtém a hora atual do dia em segundos
+# Obtém a hora atual do dia em segundos
+
+    agora = datetime.datetime.now()
+
 
 
 
