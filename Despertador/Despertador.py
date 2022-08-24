@@ -68,6 +68,8 @@ while True:
     agora = datetime.datetime.now()
     hora_atual_segundos = sum([a * b for a, b in zip(segundos_hms, [now.hour, now.minute, now.second])])
 
+# Calcula o número de segundos até o alarme disparar
+
 
 
 
