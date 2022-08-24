@@ -66,6 +66,7 @@ while True:
 # Obtém a hora atual do dia em segundos
 
     agora = datetime.datetime.now()
+    hora_atual_segundos = sum([a * b for a, b in zip(segundos_hms, [now.hour, now.minute, now.second])])
 
 
 
