@@ -70,6 +70,8 @@ while True:
 
 # Calcula o número de segundos até o alarme disparar
 
+    segundos_diferenca_tempo = alarme_segundos - hora_atual_segundos
+
 
 
 
