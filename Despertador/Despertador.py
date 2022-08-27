@@ -72,6 +72,8 @@ while True:
 
     segundos_diferenca_tempo = alarme_segundos - hora_atual_segundos
 
+# Se a diferença horária for negativa, defina o alarme para o dia seguinte
+
 
 
 
