@@ -79,6 +79,8 @@ while True:
 # Mostra  a quantidade de tempo até o alarme disparar
             print("Alarme definido para disparar em %s" datetime.timedelta(segundos_diferenca_tempo))
 
+# Dormir ate o alarme disparar
+
 
 
 
