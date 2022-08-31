@@ -81,6 +81,7 @@ while True:
 
 # Dormir ate o alarme disparar
 
+            time.sleep(segundos_diferenca_tempo)
 
 
 
