@@ -84,6 +84,7 @@ while True:
             time.sleep(segundos_diferenca_tempo)
 
 #Tempo para o alarme disparar
+        print("Acordar")
 
 
 
