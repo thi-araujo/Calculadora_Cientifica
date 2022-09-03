@@ -86,6 +86,8 @@ while True:
 #Tempo para o alarme disparar
         print("Acordar")
 
+# Carregar lista de possíveis URLs de vídeo
+
 
 
 
