@@ -88,6 +88,7 @@ while True:
 
 # Carregar lista de possíveis URLs de vídeo
 
+    with open("youtube_alarme_videos.txt", "r") as arquivo_alarme:
 
 
 
