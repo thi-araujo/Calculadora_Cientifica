@@ -92,7 +92,7 @@ while True:
     videos = arquivo_alarme.readline()
 
 # Abra um vídeo aleatório da lista
-
+    webbrowser.open(random.choice(videos))
 
 
 
