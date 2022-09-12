@@ -1,5 +1,3 @@
-# 09/09/2022
-
 #===============================================Despertador=============================================================
 
 #_________________________________________________________________________________________________________________
@@ -65,7 +63,7 @@ while True:
             print("ERRO: Digite a hora no formato HH:MM ou HH:MM:SS")
 
 
-# Convertento a hora do alarme de [H:M] ou [H:M:S] para segundo
+# Convertendo a hora do alarme de [H:M] ou [H:M:S] para segundo
 
     segundos_hms = [3600, 60, 1] # Numero de segundos em uma hora, minutos e segundos
 
