@@ -78,7 +78,7 @@ while True:
 
     segundos_diferenca_tempo = alarme_segundos - hora_atual_segundos
 
-# Verificação
+
 # Se a diferença horária for negativa, defina o alarme para o dia seguinte
         if segundos_diferenca_tempo < 0:
             segundos_diferenca_tempo += 86400 #Numero de segundos em um dia
@@ -93,7 +93,7 @@ while True:
 #Tempo para o alarme disparar
         print("Acordar")
 
-# Carregar lista de possíveis URLs de vídeo
+# Carregar lista de possíveis URLs de vídeo do youtube
 
     with open("youtube_alarme_videos.txt", "r") as arquivo_alarme:
     videos = arquivo_alarme.readline()
