@@ -18,7 +18,7 @@ import random
 
 import webbrowser
 
-# Se o arquivo de URL do vídeo no Youtube não existir, crie um
+# Se o arquivo de URL do vídeo no Youtube não existir, entao crie um
 
 if not os.path.isfile("youtube_alarme_videos.txt"):
 
