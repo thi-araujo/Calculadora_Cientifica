@@ -102,7 +102,7 @@ while True:
     with open("youtube_alarme_videos.txt", "r") as arquivo_alarme:
     videos = arquivo_alarme.readline()
 
-# Abra um vídeo aleatório da lista de videos do youtube
+# Abrir um vídeo aleatório da lista de videos do youtube
     webbrowser.open(random.choice(videos))
 
 
