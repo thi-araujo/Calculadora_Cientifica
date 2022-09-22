@@ -10,7 +10,7 @@ print('='*80)
 # Versão do script: 0.1.1r
 # Data da criação: 27/07/2022
 
-# Autor:
+# Autor: Thiago Araujo
 
 import datetime
 
