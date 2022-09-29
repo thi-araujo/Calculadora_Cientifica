@@ -76,7 +76,7 @@ while True:
 
 # Convertendo a hora do alarme de [H:M] ou [H:M:S] para segundo
 
-    segundos_hms = [3600, 60, 1] # Aqui calculamos o numero de segundos em uma hora, minutos e segundos
+    segundos_hms = [3600, 60, 1] # Aqui nós calculamos o numero de segundos em uma hora, minutos e segundos
 
     alarme_segundos = sum([a * b for a, b in zip(segundos_hms_hms[:len(horario_do_alarme)], horario_do_alarme)])
 
