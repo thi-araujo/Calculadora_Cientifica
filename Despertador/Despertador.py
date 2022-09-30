@@ -101,7 +101,7 @@ while True:
 
             time.sleep(segundos_diferenca_tempo)
 
-#Tempo para o alarme despertar
+#Tempo para o entrar em execução alarme despertar
         print("Acordar")
 
 # Carregar lista de possíveis URLs de vídeo do youtube
