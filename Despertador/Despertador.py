@@ -10,8 +10,8 @@ print('='*80)
 # Versão do script: 0.1.1r
 # Data da criação: 27/07/2022
 
-# Autor: Thiago Araujo
-# O script  não foi desenvolvido por mim, apenas realizei uma pequena modificação, o autor original é hackr.io,  extraido do
+# Autor: Thiago  Araujo
+# Essa script  não foi desenvolvido por mim, apenas realizei uma pequena modificação, o autor original é hackr.io,  extraido do
 # site: https://hackr.io/blog/python-projects
 import datetime
 
