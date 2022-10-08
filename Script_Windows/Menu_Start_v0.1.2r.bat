@@ -23,3 +23,8 @@ if '%errorlevel%' == '0' (
     echo N�o � poss�vel executar este script corretamente se voc� n�o possuir privil�gios de Administrador
     timeout /t 3 >nul 2>&1
     cls
+    echo.
+    echo O script ser� encerrado, execute ele novamente como Administrador para prosseguir.
+    timeout /t 3 >nul 2>&1
+    goto eof
+    )
