@@ -28,3 +28,8 @@ if '%errorlevel%' == '0' (
     timeout /t 3 >nul 2>&1
     goto eof
     )
+
+rem -->Define o caminho do script
+:begin
+set "batchPath=%~0"
+cd /d %~dp0
