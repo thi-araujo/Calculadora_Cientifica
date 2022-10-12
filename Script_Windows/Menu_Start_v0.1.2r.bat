@@ -43,3 +43,9 @@ del /q %tmp%\logoff.txt >nul 2>&1
 del /q %tmp%\restart.txt >nul 2>&1
 del /q %tmp%\folderIcones.txt >nul 2>&1
 timeout /t 3 >nul 2>&1
+
+:startMenu
+rem --> Menu de a��es
+
+
+
