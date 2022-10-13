@@ -46,6 +46,14 @@ timeout /t 3 >nul 2>&1
 
 :startMenu
 rem --> Menu de a��es
+cls
+
+title Menu de a��es
+
+echo.
+echo Escolha qual op��o deseja executar e pressione enter:
+echo.
+echo 	1� Atualizar desktop (Est� op��o n�o precisa de verifica��o)
 
 
 
