@@ -54,6 +54,8 @@ echo.
 echo Escolha qual op��o deseja executar e pressione enter:
 echo.
 echo 	1� Atualizar desktop (Est� op��o n�o precisa de verifica��o)
+echo.
+echo 	2� Atualizar desktop vip (Est� op��o n�o precisa de verifica��o)
 
 
 
