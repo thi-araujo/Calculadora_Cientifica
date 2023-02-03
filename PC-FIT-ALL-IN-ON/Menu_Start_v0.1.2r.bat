@@ -10,4 +10,5 @@ rem Data da revis�o: 03/10/2022
 chcp 1252 >nul 2>&1
 
 ::Define o caminho do script
+set folderScript=%~dp0
 
