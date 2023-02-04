@@ -11,4 +11,5 @@ chcp 1252 >nul 2>&1
 
 ::Define o caminho do script
 set folderScript=%~dp0
+cd %folderScript%
 
