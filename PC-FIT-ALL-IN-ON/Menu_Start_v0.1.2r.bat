@@ -13,3 +13,5 @@ chcp 1252 >nul 2>&1
 set folderScript=%~dp0
 cd %folderScript%
 
+::Vers�o do script
+
