@@ -14,4 +14,5 @@ set folderScript=%~dp0
 cd %folderScript%
 
 ::Vers�o do script
+set version=Script V0.4.2r
 
