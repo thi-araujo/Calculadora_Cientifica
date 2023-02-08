@@ -16,3 +16,5 @@ cd %folderScript%
 ::Vers�o do script
 set version=Script V0.4.2r
 
+::Define as variaveis dos arquivos tempor�rio
+
