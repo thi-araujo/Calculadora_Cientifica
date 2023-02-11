@@ -18,4 +18,5 @@ set version=Script V0.4.2r
 
 ::Define as variaveis dos arquivos tempor�rio
 set returnMenu=%tmp%\returnMenu.txt
+set returnFirstMenu=%tmp%\returnFirstMenu.txt
 
