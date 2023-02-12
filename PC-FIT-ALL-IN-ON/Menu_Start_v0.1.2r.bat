@@ -20,4 +20,5 @@ set version=Script V0.4.2r
 set returnMenu=%tmp%\returnMenu.txt
 set returnFirstMenu=%tmp%\returnFirstMenu.txt
 set returnSubMenu=%tmp%\returnSubMenu.txt
+set logoff=%tmp%\logoff.txt
 
